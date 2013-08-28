@@ -1,3 +1,7 @@
+##################
+Virtualenv and pip
+##################
+
 In this section you will:
 
 *	use pip to install packages
@@ -167,14 +171,14 @@ Deactivate a virtualenv
     
 Now you're no longer in any virtualenv.       
 
---system-site-packages
+--install-site-packages
 -----------------------
 
 When you create a virtualenv, it doesn't include any Python packages already
 installed on your system. But sometimes, that *is* what you want. In that
 case::
 
-    virtualenv --system-site-packages my-third-virtualenv 
+    virtualenv --install-site-packages my-third-virtualenv 
     
 remove a virtualenv
 -------------------
@@ -185,3 +189,4 @@ virtualenvs are disposable. You can get rid of these::
     rm -r  my-first-virtualenv my-second-virtualenv my-third-virtualenv
     
 And that's pretty much all you need to get started and to use pip and
+virtualenv effectively.
